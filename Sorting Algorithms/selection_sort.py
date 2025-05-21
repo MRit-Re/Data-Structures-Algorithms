@@ -8,7 +8,7 @@
 '''
 O(n^2) : TIME COMPLEXITY
 O(1) : SPACE COMPLEXITY
-INPLACE, OFFLINE, STABLE
+INPLACE, OFFLINE, UNSTABLE
 '''
 
 def selection_sort(array,n):
