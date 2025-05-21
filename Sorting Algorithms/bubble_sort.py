@@ -4,6 +4,12 @@
 # if the element to the left in a consecutive pair is larger it is moved to the right of the pair (loop 2)
 # the swapping is performed n-i-1 times and at the end element at the n-i-1 index is found (loop 2)
 
+'''
+O(n^2) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+INPLACE, OFFLINE, STABLE
+'''
+
 def bubble_sort(array,n):
     for i in range(n):
         for j in range(n-i-1):

@@ -5,6 +5,12 @@
 # minimum element is placed at the i-th position at the end (loop 2)
 # the array checked decreses in size as with each iteration i-th minimum element is found (loop 2)
 
+'''
+O(n^2) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+INPLACE, OFFLINE, STABLE
+'''
+
 def selection_sort(array,n):
     for i in range(n):
         minimum = i
