@@ -1,8 +1,9 @@
-# objective is to swap the largest elements at the end of the array
-# with each iteration the array to be swapped is trimmed
-# have to find the largest element n times to sort where n is the number of elements (loop 1)
-# if the element to the left in a consecutive pair is larger it is moved to the right of the pair (loop 2)
-# the swapping is performed n-i-1 times and at the end element at the n-i-1 index is found (loop 2)
+# objective is to find all the leader elements in a given array
+# an element is a leader if and only if it is greater than all the elements to its right
+# the rightmost element is always a leader as there are no elements to its right
+# a variable tracks the current leader which is initially at the last index and traverses the list once from right to left
+# if an element is greater than the current leader then it is also a leader and is added to the list and the current leader is also updated
+# the array is traversed once ie. linear complexity
 
 '''
 O(n) : TIME COMPLEXITY
@@ -16,6 +17,6 @@ def leaders(array,n):
         if array[i] > current:
             result.append(array[i])
             current = array[i]
-    return result[-1::-1]
+    return result
 
 print(leaders([6,7,4,3,5,2],5))
