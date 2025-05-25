@@ -1,3 +1,8 @@
+'''
+O(logn) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def find_peak(array,left,right):
     while left < right:
         middle = (left+right)//2
