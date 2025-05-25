@@ -1,3 +1,8 @@
+'''
+O(n) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def buy_sell(prices):
         buy,profit = prices[0],0
         for i in prices:
