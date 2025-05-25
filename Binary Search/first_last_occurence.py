@@ -1,3 +1,8 @@
+'''
+O(logn) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def search_range(array,target):
     def search(checkleft,left,right):
         index = -1
