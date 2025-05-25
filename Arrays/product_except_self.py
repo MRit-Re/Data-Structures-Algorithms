@@ -1,3 +1,8 @@
+'''
+O(n) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def product_except_self(nums):
         n = len(nums)
         array = [1]*n

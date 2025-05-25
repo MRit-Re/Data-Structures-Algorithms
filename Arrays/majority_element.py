@@ -1,3 +1,8 @@
+'''
+O(n) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def majority_element(array):
         count,major = 0,0
         for i in array:

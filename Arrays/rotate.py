@@ -1,3 +1,8 @@
+'''
+O(n) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def rotate(array,k):
         n = len(array)
         k %= n
