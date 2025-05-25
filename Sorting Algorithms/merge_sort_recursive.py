@@ -1,8 +1,3 @@
-# objective is to divide the array in half till it reaches single elements and sort them one at a time while merging
-# divide and conquer algorithm using recursion
-# first the left half is seperated and sorted and then the right half and these are then merged
-# merge function compares the left and right half elements and places them in the original array at the appropriate place
-
 '''
 O(n.logn) : TIME COMPLEXITY
 O(n) : SPACE COMPLEXITY
