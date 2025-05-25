@@ -1,9 +1,3 @@
-# objective is to shift all zeroes to the end of an array while maintaining the relative order of the non-zero elements
-# maintain the index where a non-zero element should be placed if encountered while traversing the array ie. the last non-zero element
-# swap the non-zero element with the current appropriate position for it 
-# arrays with none or single elements cannot be shifted and are returned as it is 
-# the array is traversed once ie. linear complexity
-
 '''
 O(n) : TIME COMPLEXITY
 O(1) : SPACE COMPLEXITY
