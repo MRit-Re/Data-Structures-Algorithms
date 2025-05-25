@@ -1,3 +1,8 @@
+'''
+O(logn) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def search_matrix(matrix, target):
         m,n = len(matrix),len(matrix[0])
         def element(x):

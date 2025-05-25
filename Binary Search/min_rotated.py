@@ -1,3 +1,8 @@
+'''
+O(logn) : TIME COMPLEXITY
+O(1) : SPACE COMPLEXITY
+'''
+
 def min_rotated(array,start,end):
     while end > start:
         middle = (end+start)//2
