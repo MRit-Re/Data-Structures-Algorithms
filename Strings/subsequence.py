@@ -14,4 +14,4 @@ def subsequence_check(s,t):
         return True
     return False
 
-print(subsequence_check("abc","adgberichj"))
+print(subsequence_check("abc","adgbericj"))
