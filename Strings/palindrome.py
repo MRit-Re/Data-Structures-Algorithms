@@ -3,7 +3,7 @@ O(n) : TIME COMPLEXITY
 O(1) : SPACE COMPLEXITY
 '''
 
-def palindrome(s):
+def palindrome_check(s):
     left,right = 0,len(s)-1
     while left <= right:
         if not s[left].isalnum():
@@ -19,4 +19,4 @@ def palindrome(s):
             right -= 1
     return True
 
-print(palindrome("A man, a plan, a canal: Panama"))
+print(palindrome_check("A man, a plan, a canal: Panama"))
