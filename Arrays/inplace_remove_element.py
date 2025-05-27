@@ -12,4 +12,4 @@ def remove_element(nums,val):
             i += 1
     return nums[0:i:1]
 
-print(remove_element([2,4,3,1,5],4))
+print(remove_element([2,4,3,1,5],3))
