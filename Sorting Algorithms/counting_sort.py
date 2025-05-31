@@ -4,24 +4,27 @@ O(1) : SPACE COMPLEXITY
 INPLACE, ONLINE, UNSTABLE
 '''
 
-def counting_sort(array,n):
-    i = 0
-    current = array[i]
-    while i < n:
-        count = 0
-        for j in range(n):
-            if array[j] < current:
+def cycle_sort(array,n):
+    for cyclenumber in range(n):
+        current = array[cyclenumber]
+        count = cyclenumber
+        for i in range(cyclenumber+1,n,1):
+            if array[i] < current:
                 count += 1
-        if current == array[count]:
-            i += 1
-            if i < n:
-                current = array[i]
-            print(array,i)
-        else:
-            temp = array[count]
-            array[count] = current
-            current = temp
-            print(array)
+        if count == cyclenumber:
+            continue
+        while current == array[count]:
+            count += 1
+        array[count],current = current,array[count]
+        while count != cyclenumber:
+            count = cyclenumber
+            for i in range(cyclenumber+1,n,1):
+                if array[i] < current:
+                    count += 1
+            while current == array[count]:
+                count += 1
+            array[count],current = current,array[count]
+        
     return array
 
-print(counting_sort([3,1,2,5,4],5))
+print(cycle_sort([3,1,2,5,3,4],5))
